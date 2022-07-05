@@ -43,6 +43,11 @@ try:
 except ImportError:
     rocket_lander_gym = None
 
+try:
+    import SEQ
+except ImportError:
+    SEQ=None
+
 
 # Register no vel envs
 def create_no_vel_env(env_id: str):
